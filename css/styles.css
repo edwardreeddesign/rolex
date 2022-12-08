@@ -1,0 +1,278 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: #00225d;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  letter-spacing: 0.05rem;
+  line-height: 1.4;
+  text-align: left;
+  position: relative;
+}
+
+p {
+  font-size: clamp(0.8rem, 3vw, 1.5rem);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.rolex {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.md-heading,
+.lg-heading {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.bg-1,
+.bg-2,
+.bg-3,
+.bg-4 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-1 {
+  background-image: url(/img/rolex.png);
+  min-height: 100%;
+}
+
+.bg-1 .hero {
+  height: 100vh;
+}
+
+.bg-1 .hero .md-heading {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
+  letter-spacing: 0.3rem;
+  margin-bottom: 14rem;
+  padding: 0.5rem;
+  color: #1d1d1f;
+}
+
+.bg-1 .hero .lg-heading {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #1d1d1f;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.2;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 4rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bg-1 .hero .lg-heading .color {
+  font-size: clamp(3rem, 5vw, 5rem);
+}
+
+.about {
+  background: #fff;
+  color: #1d1d1f;
+  height: 20rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.about .md-heading {
+  color: #1d1d1f;
+  margin-bottom: 2rem;
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.bg-2 {
+  background-image: url(/img/milgauss.png);
+  min-height: 20rem;
+}
+
+.bg-2 .milgauss {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.bg-2 .milgauss .lg-heading {
+  padding: 2rem;
+  color: #1d1d1f;
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0 2rem 0;
+  height: 100%;
+}
+
+.cards .md-title {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
+}
+
+.cards .card-1 {
+  background: #fff;
+  color: #1d1d1f;
+  height: 60%;
+  width: 100%;
+  padding: 2rem;
+}
+
+.cards .card-2 {
+  height: 60%;
+  width: 100%;
+  padding: 2rem;
+  background: #04437d;
+  color: #fff;
+}
+
+.bg-3 {
+  background-image: url(/img/Cosmograph-Daytona.webp);
+  height: 30rem;
+}
+
+.bg-3 .cosmograph {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.bg-3 .cosmograph .lg-heading {
+  padding: 2rem;
+  color: #1d1d1f;
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
+}
+
+.bg-4 {
+  background-image: url(/img/rolex-black.jpeg);
+  height: 100%;
+}
+
+.bg-4 .more {
+  height: 100%;
+}
+
+.bg-4 .more-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  background: #04437d;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.95) 0px 5px 15px;
+          box-shadow: rgba(255, 255, 255, 0.95) 0px 5px 15px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.bg-4 .more-btn:hover {
+  color: #1d1d1f;
+  background: #fff;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  font-family: cursive;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+footer .copyright img {
+  height: 3rem;
+}
+/*# sourceMappingURL=styles.css.map */

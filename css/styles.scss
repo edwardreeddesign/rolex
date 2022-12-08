@@ -1,0 +1,260 @@
+$ff-title: 'Cormorant Garamond', serif;
+$ff-main: 'Poppins', sans-serif;
+
+// $clr-light: #fffdfc;
+$clr-light: #fff;
+$clr-accent: #04437d;
+$clr-medium: #00225d;
+// $clr-dark: #08102b;
+$clr-dark: #1d1d1f;
+$clr-rolex: #ffd700;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: $clr-medium;
+  color: $clr-light;
+  font-family: $ff-main;
+  height: 100%;
+  letter-spacing: 0.05rem;
+  line-height: 1.4;
+  text-align: left;
+  position: relative;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+}
+
+p {
+  font-size: clamp(0.8rem, 3vw, 1.5rem);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+// .rolex,
+// .lg-heading,
+// .md-heading {
+//   color: $clr-medium;
+// }
+
+.rolex {
+  font-family: $ff-title;
+}
+
+.md-heading,
+.lg-heading {
+  font-family: $ff-title;
+}
+
+.bg-1,
+.bg-2,
+.bg-3,
+.bg-4 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-1 {
+  background-image: url(/img/rolex.png);
+  min-height: 100%;
+
+  .hero {
+    height: 100vh;
+    .md-heading {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      backdrop-filter: blur(10px);
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(1.5rem, 5vw, 4.5rem);
+      letter-spacing: 0.3rem;
+      margin-bottom: 14rem;
+      padding: 0.5rem;
+      color: $clr-dark;
+    }
+
+    .lg-heading {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      backdrop-filter: blur(10px);
+      color: $clr-dark;
+      border-radius: 0.4rem;
+      padding: 1rem;
+      text-align: center;
+      line-height: 1.2;
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      text-transform: uppercase;
+      position: absolute;
+      margin-top: 4rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      .color {
+        font-size: clamp(3rem, 5vw, 5rem);
+      }
+    }
+  }
+}
+
+.about {
+  background: $clr-light;
+  color: $clr-dark;
+  height: 20rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
+
+  .md-heading {
+    color: $clr-dark;
+    margin-bottom: 2rem;
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+  }
+}
+
+.bg-2 {
+  background-image: url(/img/milgauss.png);
+  min-height: 20rem;
+
+  .milgauss {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    padding: 2rem;
+
+    margin-bottom: 5rem;
+
+    .lg-heading {
+      padding: 2rem;
+      color: $clr-dark;
+      font-size: clamp(1.5rem, 5vw, 3.5rem);
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+  height: 100%;
+
+  .md-title {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-family: $ff-title;
+    font-size: clamp(1.5rem, 5vw, 4.5rem);
+  }
+
+  .card-1 {
+    background: $clr-light;
+    color: $clr-dark;
+    height: 60%;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .card-2 {
+    height: 60%;
+    width: 100%;
+    padding: 2rem;
+    background: $clr-accent;
+    color: $clr-light;
+  }
+}
+
+.bg-3 {
+  background-image: url(/img/Cosmograph-Daytona.webp);
+  height: 30rem;
+
+  .cosmograph {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+
+    .lg-heading {
+      padding: 2rem;
+      color: $clr-dark;
+      font-size: clamp(1.5rem, 5vw, 4.5rem);
+    }
+  }
+}
+
+.bg-4 {
+  background-image: url(/img/rolex-black.jpeg);
+  height: 100%;
+
+  .more {
+    height: 100%;
+  }
+  .more-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: $ff-main;
+    letter-spacing: 0.3rem;
+    color: $clr-light;
+    background: $clr-accent;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba($clr-light, 0.95) 0px 5px 15px;
+    transition: all 300ms ease;
+
+    &:hover {
+      color: $clr-dark;
+      background: $clr-light;
+    }
+  }
+}
+
+footer {
+  .copyright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    font-family: cursive;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: $clr-light;
+
+    img {
+      height: 3rem;
+    }
+  }
+}
